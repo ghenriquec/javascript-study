@@ -1,4 +1,5 @@
 # O que vamos estudar nesse modulo 
+## Base do JavaScript
 
 - [x]  O que é JavaScript?
 - [x]  Atribuição de valores
@@ -12,12 +13,3 @@
 - [ ]  Import/export
 - [ ]  Loops
 - [ ]  Imutabilidade
-*
-*
-*
-*
-*
-*
-*
-*
-*
