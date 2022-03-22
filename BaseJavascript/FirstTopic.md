@@ -7,3 +7,7 @@
  - Incorpore o código JavaScript diretamente na página HTML.
  - Faça referência a um arquivo de código JavaScript externo.
 
+## Incorpore código JavaScript em uma página HTML
+### Colocar o código JavaScript diretamente dentro do elemento <script> não é recomendado e deve ser usado somente para prova de conceito ou para testes.
+### No elemento <script>, usamos a função alert() para exibir a mensagem Hello, World!.
+### <script> Alert('Hello World') </script>
