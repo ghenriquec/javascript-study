@@ -2,7 +2,6 @@
 ## Base do JavaScript
 
 - [x]  O que é JavaScript?
-- [ ]  Primeiro Hello World
 - [x]  Atribuição de valores
 - [x]  Diferença entre: var, let e const
 - [x]  Operadores: +, -, /, *, % e **
