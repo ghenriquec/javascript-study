@@ -13,7 +13,3 @@
 - [ ]  Import/export
 - [ ]  Loops
 - [ ]  Imutabilidade
-
-```````````````js
-var a = 10;
-```````````````
