@@ -27,12 +27,8 @@ Atribuição de multiplicação 	x *= y 	x = x * y
 Atribuição de divisão 	x /= y 	x = x / y
 Atribuição de resto 	x %= y 	x = x % y
 Atribuição exponencial 	x **= y 	x = x ** y
-Atribuição bit-a-bit por deslocamento á esquerda 	x <<= y 	x = x << y
-Atribuição bit-a-bit por deslocamento á direita 	x >>= y 	x = x >> y
-Atribuiçãode bit-a-bit deslocamento á direita não assinado 	x >>>= y 	x = x >>> y
-Atribuição AND bit-a-bit 	x &= y 	x = x & y
-Atribuição XOR bit-a-bit 	x ^= y 	x = x ^ y
-Atribuição OR bit-a-bit 	x |= y 	x = x | y
+
+
 Operadores de comparação
 
 This seems to me kind of poorly explained, mostly the difference betwen "==" and "==="... Um operador de comparação compara seus operandos e retorna um valor lógico baseado em se a comparação é verdadeira. Os operandos podem ser numéricos, strings, lógicos ou objetos. Strings são comparadas com base em ordenação lexográfica utilizando valores Unicode. Na maioria dos casos, se dois operandos não são do mesmo tipo, o JavaScript tenta convertê-los para um tipo apropriado. Isto geralmente resulta na realização de uma comparação numérica. As únicas exceções a esta regra são os operadores === e o !==, que realizam comparações de igualdade e desigualdade "estritas". Estes operadores não tentam converter os operandos em tipos compatíveis antes de verificar a igualdade. A tabela a seguir descreve os operadores de comparação levando em conta o seguinte código:
