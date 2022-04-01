@@ -66,8 +66,7 @@ console.log(1 / 2 == 1.0 / 2.0); /* isto também é verdadeiro */
 Em complemento às operações aritméticas padrões (+, -, * /), o JavaScript disponibiliza os operadores aritméticos listados na tabela a seguir.
 Operadores aritméticos Operador 	Descrição 	Exemplo
 Módulo (%) 	Operador binário. Retorna o inteiro restante da divisão dos dois operandos. 	12 % 5 retorna 2.
-Incremento (++) 	Operador unário. Adiciona um ao seu operando. Se usado como operador prefixado (++x), retorna o valor de seu operando após a adição. Se usado como operador pósfixado (x++), retorna o valor de seu operando antes da adição. 	Se x é 3, então ++x define x como 4 e retorna 4, enquanto x++ retorna 3 e, somente então, define x como 4.
-Decremento (--) 	Operador unário. Subtrai um de seu operando. O valor de retorno é análogo àquele do operador de incremento. 	Se x é 3, então --x define x como 2 e retorna 2, enquanto x-- retorna 3 e, somente então, define x como 2.
+
 Negação (-) 	Operador unário. Retorna a negação de seu operando. 	
 
 Se x é 3, então -x retorna -3.
