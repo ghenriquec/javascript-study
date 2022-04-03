@@ -5,10 +5,10 @@
 - [x]  Atribuição de valores
 - [x]  Diferença entre: var, let e const
 - [x]  Operadores: +, -, /, *, % e **
-- [ ]  Incremento: ++x e x++
-- [ ]  Decremento: --x e x--
+- [x]  Incremento: ++x e x++
+- [x]  Decremento: --x e x--
 - [x]  Comparadores: ===, !==, <, >, >= e <=
-- [ ]  Condicionais: if, else e switch-case
+- [x]  Condicionais: if, else e switch-case
 - [x]  Console.log
 - [ ]  Import/export
 - [ ]  Loops
