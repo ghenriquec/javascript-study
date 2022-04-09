@@ -64,3 +64,90 @@ Você também pode renomear exportações explícitas para evitar conflitos e no
 export { myFunction as function1,
          myVariable as variable };
 ````````
+
+### Re-exportando / Agregando
+
+É possível também "importar/exportar" de módulos diferentes em um módulo pai, de modo que eles estejam disponíveis para serem importados daquele módulo. Em outras palavras, pode-se criar um módulo único concentrando várias exportações de vários módulos.
+
+Isto pode ser feito com a sintaxe "export from":
+````````js
+export { default as function1,
+         function2 } from 'bar.js';
+````````
+O que é comparável com um combinação de import e export:
+
+````````js
+import { default as function1,
+         function2 } from 'bar.js';
+export { function1, function2 };
+````````
+Mas onde function1 e function2 não ficam disponíveis dentro do módulo atual.
+
+Nota: Os exemplos a seguir são sintaticamente inválidos apesar de sua equivalência com o import:
+````````js
+import DefaultExport from 'bar.js'; // Válido
+
+export DefaultExport from 'bar.js'; // Inválido
+````````
+O modo correto de fazer isso e renomeando o export:
+````````js
+export { default as DefaultExport } from 'bar.js';
+````````
+Exemplos
+Usando exportações explícitas
+
+Em um módulo my-module.js poderiamos usar o seguinte código:
+````````js
+// módulo "my-module.js"
+function cube(x) {
+  return x * x * x;
+}
+
+const foo = Math.PI + Math.SQRT2;
+
+var graph = {
+  options: {
+      color:'white',
+      thickness:'2px'
+  },
+  draw: function() {
+      console.log('Da função draw de graph');
+  }
+}
+
+export { cube, foo, graph };
+````````
+
+Então, no módulo principal incluído sem sua página HTML, poderíamos ter:
+````````js
+import { cube, foo, graph } from './my-module.js';
+
+graph.options = {
+    color:'blue',
+    thickness:'3px'
+};
+
+graph.draw();
+console.log(cube(3)); // 27
+console.log(foo);    // 4.555806215962888
+````````
+É importante notar o seguinte:
+
+    Você pode incluir esse script no seu código HTML através do elemento <script> do tipo="module", de modo que ele seja reconhecido e tratado apropriadamente.
+    Você não pode executar módulos JS através de file:// URL — você receberá errors CORS. Você deve rodá-los através de um servidor HTTP.
+
+Usando a exportação padrão
+
+Se queremos exportar um valor sozinho ou obter um valor de reserva para o nosso módulo, nós poderiamos usar export default:
+```js
+// módulo "my-module.js"
+export default function cube(x) {
+  return x * x * x;
+}
+```
+
+Daí em outro script podemos usar:
+```js
+import cube from 'my-module';
+console.log(cube(3)); // 27
+```
