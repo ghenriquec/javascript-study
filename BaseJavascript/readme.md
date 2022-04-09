@@ -10,6 +10,6 @@
 - [x]  Comparadores: ===, !==, <, >, >= e <=
 - [x]  Condicionais: if, else e switch-case
 - [x]  Console.log
-- [ ]  Import/export
-- [ ]  Loops
-- [ ]  Imutabilidade
+- [x]  Import/export
+- [ ]  Loops 
+- [ ]  Imutabilidade 
