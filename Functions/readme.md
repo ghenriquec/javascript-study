@@ -1,9 +1,9 @@
 # O que vamos estudar nesse modulo 
 ## Functions
 
-- [ ]  Parâmetros
-- [ ]  Return
-- [ ]  Escopo
-- [ ]  O que é callback?
-- [ ]  Function expression
-- [ ]  Arrow Function
+- [x]  Parâmetros
+- [x]  Return
+- [x]  Escopo
+- [x]  O que é callback?
+- [x]  Function expression
+- [x]  Arrow Function
