@@ -71,7 +71,7 @@ Funções construtoras são utilizadas para criar novos objetos e geralmente tem
 function Person(name) {
 	this.name = name
 	this.walk() = function() {
-		return this.name + "está andando")
+		return this.name + "está andando"
 	}
 }
 const mayk = new Person("Guilherme")
