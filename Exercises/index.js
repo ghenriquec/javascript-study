@@ -57,3 +57,4 @@ console.log(a)
 var a = 1
 
 /* Ocorre por que a sofre hoisting(elevação), mas o apenas a variavel recebe a elevação, não o valor. */
+

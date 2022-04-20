@@ -28,3 +28,12 @@ for (var x = 0; x < 10; x++) {
   console.log(x)
 }
   ```
+  ```js
+// Exemplo 2
+
+let name = 'Guilherme'
+let names = ['Joao', 'Maria', 'Pedro']
+
+for (let name of names) {
+  console.log(name)
+}
