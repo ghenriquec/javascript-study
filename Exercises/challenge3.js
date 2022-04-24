@@ -1,6 +1,11 @@
+/* Crie uma função que receba uma string em celsius ou fahrenheit
+e faça a transformação de uma unidade para outra */
+
+
 const convertTemperatures = (degrees) => { 
   const celsiusExists = degrees.toUpperCase().includes('C');
   const fahrenheitExists = degrees.toUpperCase().includes('F');
+  // negando a condição para verificação se o campo foi preenchido.
   if(!celsiusExists && !fahrenheitExists) {
     throw new Error('Please enter a valid temperature');
   }
